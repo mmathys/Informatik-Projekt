@@ -24,22 +24,25 @@ public class SleepAction extends Action {
 	@Override
 	public void handle(Question q) {
 		printTitle();
-		
-		//TODO: Stocks neu generieren via call.
+
+		// TODO: Stocks neu generieren via call.
 		// Investments aktualisieren.
-		
+
 		StockFactory.getInstance().nextDay();
-		
+
 		ArrayList<Investment> investments = Application.getPlayer().getInvestments();
-		
-		for(Investment i : investments) {
+
+		for (Investment i : investments) {
 			i.updateChange();
 		}
-		
-		System.out.print("\n\n"+TerminalUtil.highlight(AnsiPrefixGenerator.getSleep())+format(" Du betest vor dem Einschlafen für Lakshmi, die hinduistische Göttin des Reichtums.\n               Sie spricht dir Erfolg zu und du schläfst ruhig ein.", Color.GREEN));
-		
+
+		System.out.print("\n\n" + TerminalUtil.highlight(AnsiPrefixGenerator.getSleep())
+				+ format(
+						" Du betest vor dem Einschlafen für Lakshmi, die hinduistische Göttin des Reichtums.\n               Sie spricht dir Erfolg zu und du schläfst ruhig ein.",
+						Color.GREEN));
+
 		TerminalUtil.continueIfEnterKeyPressed();
-		
+
 		fallback();
 	}
 

@@ -16,11 +16,11 @@ public class SellStockAction extends Action {
 	@Override
 	public void handle(Question q) {
 		printTitle();
-		
+
 		TerminalUtil.continueIfEnterKeyPressed();
-		
+
 		StockTransaction transaction = new StockTransaction(StockAction.SELL, getParent());
-		
+
 		fallback();
 	}
 

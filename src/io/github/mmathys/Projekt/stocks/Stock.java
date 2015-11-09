@@ -28,7 +28,7 @@ public class Stock {
 	public float getValuation() {
 		return valuation;
 	}
-	
+
 	public String getFormattedValuation() {
 		return String.format("%.2f", getValuation());
 	}
@@ -73,20 +73,20 @@ public class Stock {
 	public float getChangeFactor() {
 		return cyclePercent;
 	}
-	
+
 	public float getCyclePercent() {
 		// auf zwei gerundet
 		int a = (int) (cyclePercent * 100f);
 		return a / 100f;
 	}
-	
+
 	public String getCyclePercentString() {
 		float p = getCyclePercent();
-		if(p>0){
-			return "+"+p;
-		}else if(p == 0){
-			return " "+p;
-		}else{
+		if (p > 0) {
+			return "+" + p;
+		} else if (p == 0) {
+			return " " + p;
+		} else {
 			return Float.toString(p);
 		}
 	}
@@ -94,23 +94,24 @@ public class Stock {
 	public void setCyclePercent(float cyclePercent) {
 		this.cyclePercent = cyclePercent;
 	}
-	
+
 	public String getTabsAfter(String s, int max) {
 		int remaining = max - s.length();
 		String tabs = "";
-		for(int i = 0; i<remaining; i++){
-			tabs+=" ";
+		for (int i = 0; i < remaining; i++) {
+			tabs += " ";
 		}
 		return tabs;
 	}
-	
+
 	@Override
 	public String toString() {
 		String out = "";
-		out += Ansi.format(getShortName(), Ansi.Attribute.UNDERLINE, null, null) + " " 
-				+ getName() + getTabsAfter(getName(), 26) 
-				+ TerminalUtil.formatCyclePercent(getCyclePercent(), getCyclePercentString()) + getTabsAfter(getCyclePercentString(), 9) 
-				+ getTabsAfter(getFormattedValuation(), 19) + TerminalUtil.moneyFormat(getFormattedValuation());
+		out += Ansi.format(getShortName(), Ansi.Attribute.UNDERLINE, null, null) + " " + getName()
+				+ getTabsAfter(getName(), 26)
+				+ TerminalUtil.formatCyclePercent(getCyclePercent(), getCyclePercentString())
+				+ getTabsAfter(getCyclePercentString(), 9) + getTabsAfter(getFormattedValuation(), 19)
+				+ TerminalUtil.moneyFormat(getFormattedValuation());
 		return out;
 	}
 }
