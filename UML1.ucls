@@ -138,7 +138,7 @@
   </class>  
   <class id="16" language="java" name="io.github.mmathys.Projekt.stocks.StockFactory" project="Projekt" 
     file="/Projekt/src/io/github/mmathys/Projekt/stocks/StockFactory.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="182" y="1152"/>    
+    <position height="-1" width="-1" x="355" y="1328"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="true"/>      
@@ -147,7 +147,7 @@
   </class>  
   <class id="17" language="java" name="io.github.mmathys.Projekt.stocks.StockMarket" project="Projekt" 
     file="/Projekt/src/io/github/mmathys/Projekt/stocks/StockMarket.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="191" y="1322"/>    
+    <position height="-1" width="-1" x="361" y="1502"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="true"/>      
@@ -156,7 +156,7 @@
   </class>  
   <class id="18" language="java" name="io.github.mmathys.Projekt.stocks.Stock" project="Projekt" 
     file="/Projekt/src/io/github/mmathys/Projekt/stocks/Stock.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="415" y="1679"/>    
+    <position height="-1" width="-1" x="356" y="1801"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="true"/>      
@@ -165,7 +165,7 @@
   </class>  
   <class id="19" language="java" name="io.github.mmathys.Projekt.stocks.StockTransaction" project="Projekt" 
     file="/Projekt/src/io/github/mmathys/Projekt/stocks/StockTransaction.java" binary="false" corner="TOP_LEFT">    
-    <position height="-1" width="-1" x="609" y="1182"/>    
+    <position height="-1" width="-1" x="574" y="1147"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="false" package="false" protected="false" private="false" static="true"/>      
@@ -185,12 +185,12 @@
     <end type="TARGET" refId="4"/>  
   </generalization>  
   <dependency id="23">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="3"/>  
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="16"/>  
   </dependency>  
   <dependency id="24">    
-    <end type="SOURCE" refId="19"/>    
-    <end type="TARGET" refId="17"/>  
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="3"/>  
   </dependency>  
   <dependency id="25">    
     <end type="SOURCE" refId="17"/>    
@@ -228,39 +228,35 @@
     <end type="SOURCE" refId="7"/>    
     <end type="TARGET" refId="4"/>  
   </generalization>  
-  <dependency id="34">    
-    <end type="SOURCE" refId="19"/>    
-    <end type="TARGET" refId="18"/>  
-  </dependency>  
-  <generalization id="35">    
+  <generalization id="34">    
     <end type="SOURCE" refId="6"/>    
     <end type="TARGET" refId="4"/>  
   </generalization>  
-  <generalization id="36">    
+  <generalization id="35">    
     <end type="SOURCE" refId="12"/>    
     <end type="TARGET" refId="10"/>  
   </generalization>  
-  <dependency id="37">    
+  <dependency id="36">    
     <end type="SOURCE" refId="2"/>    
     <end type="TARGET" refId="3"/>  
   </dependency>  
-  <generalization id="38">    
+  <generalization id="37">    
     <end type="SOURCE" refId="8"/>    
     <end type="TARGET" refId="4"/>  
   </generalization>  
-  <generalization id="39">    
+  <generalization id="38">    
     <end type="SOURCE" refId="11"/>    
     <end type="TARGET" refId="10"/>  
   </generalization>  
-  <dependency id="40">    
+  <dependency id="39">    
     <end type="SOURCE" refId="1"/>    
     <end type="TARGET" refId="10"/>  
   </dependency>  
-  <dependency id="41">    
+  <dependency id="40">    
     <end type="SOURCE" refId="6"/>    
     <end type="TARGET" refId="19"/>  
   </dependency>  
-  <dependency id="42">    
+  <dependency id="41">    
     <end type="SOURCE" refId="10"/>    
     <end type="TARGET" refId="13"/>  
   </dependency>  
