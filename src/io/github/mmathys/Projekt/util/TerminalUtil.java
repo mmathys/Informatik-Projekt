@@ -25,7 +25,7 @@ public class TerminalUtil {
 	}
 
 	public static String moneyFormat(String money) {
-		return format(money + " USD", Attribute.REVERSE, Color.BLUE, null);
+		return format(money + " USD", Attribute.REVERSE, Color.BLUE, Color.WHITE);
 	}
 
 	public static String highlight(String whatever) {
